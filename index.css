@@ -33,11 +33,6 @@ main {
 section {
   height: auto;
 }
-@media (min-width: 768px) {
-  section {
-    height: 100vh;
-  }
-}
 section .container {
   background-position: top center;
   padding: 48px 24px;
@@ -54,7 +49,7 @@ section .container {
 }
 @media (min-width: 768px) and (min-width: 1280px) {
   section .container {
-    padding: 128px;
+    padding: 128px calc(50vw - 480px);
   }
 }
 section .container h1 {
@@ -235,7 +230,7 @@ ul li {
   background-image: url("./hanna.png");
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
 }
 #landing h1 {
   font-size: 24px;
@@ -245,7 +240,12 @@ ul li {
 }
 @media (min-width: 768px) {
   #landing h1 {
-    font-size: 80px;
+    font-size: 72px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  #landing h1 {
+    font-size: 96px;
   }
 }
 #landing h2 {
@@ -272,6 +272,29 @@ ul li {
 }
 #introduction div {
   color: #957dad;
+}
+#introduction .top-container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #introduction .top-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#introduction .top-container img {
+  border: 8px solid #fff;
+  max-width: 480px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #introduction .top-container .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 24px;
+  }
 }
 
 #goals {
@@ -304,11 +327,6 @@ ul li {
   width: 100%;
   padding: 8px;
 }
-@media (min-width: 768px) {
-  #czeizel .content-container .left-side {
-    width: 50%;
-  }
-}
 #czeizel .content-container .left-side .surgery-description {
   margin-bottom: 1em;
 }
@@ -325,11 +343,6 @@ ul li {
   width: 100%;
   padding: 8px;
 }
-@media (min-width: 768px) {
-  #czeizel .content-container .right-side {
-    width: 50%;
-  }
-}
 #czeizel .content-container .right-side h2 {
   margin: 0 0 1em;
   font-weight: 900;
@@ -342,6 +355,17 @@ ul li {
 #czeizel .content-container .right-side ul li {
   list-style-type: none;
   margin-bottom: 1em;
+}
+#czeizel .content-container .right-side ul li .service-title {
+  font-weight: 600;
+  text-decoration: underline;
+}
+#czeizel .content-container .right-side ul li .service-desc {
+  font-size: 14px;
+}
+#czeizel .content-container .right-side ul li .service-price {
+  font-size: 14px;
+  font-weight: 600;
 }
 #czeizel .button-container {
   width: 100%;
@@ -377,55 +401,53 @@ ul li {
 #l33 div {
   color: #fff;
 }
-#l33 .content-container {
+#l33 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-#l33 .content-container .left-side {
+#l33 .container h1 {
+  width: 100%;
+}
+#l33 .container .content-container {
+  display: block;
+}
+#l33 .container .content-container .left-side {
   width: 100%;
   padding: 8px;
 }
-@media (min-width: 768px) {
-  #l33 .content-container .left-side {
-    width: 50%;
-  }
-}
-#l33 .content-container .left-side .surgery-description {
+#l33 .container .content-container .left-side .surgery-description {
   margin-bottom: 1em;
 }
-#l33 .content-container .right-side {
+#l33 .container .content-container .right-side {
   width: 100%;
   padding: 8px;
 }
-@media (min-width: 768px) {
-  #l33 .content-container .right-side {
-    width: 50%;
-  }
-}
-#l33 .content-container .right-side h2 {
+#l33 .container .content-container .right-side h2 {
   margin: 0 0 1em;
   font-weight: 900;
   color: #fff;
   font-style: italic;
 }
-#l33 .content-container .right-side .reserve,
-#l33 .content-container .right-side .time,
-#l33 .content-container .right-side .price {
+#l33 .container .content-container .right-side .price,
+#l33 .container .content-container .right-side .reserve,
+#l33 .container .content-container .right-side .time {
   margin-bottom: 1em;
 }
-#l33 .content-container .right-side .reserve .title,
-#l33 .content-container .right-side .time .title,
-#l33 .content-container .right-side .price .title {
+#l33 .container .content-container .right-side .price .title,
+#l33 .container .content-container .right-side .reserve .title,
+#l33 .container .content-container .right-side .time .title {
   font-weight: 900;
   font-style: italic;
 }
-#l33 .button-container {
+#l33 .container .button-container {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 1em 0;
 }
-#l33 .button-container button {
+#l33 .container .button-container button {
   font-size: 16px;
   height: 60px;
   background-color: #fff;
@@ -438,7 +460,7 @@ ul li {
   color: #957dad;
   cursor: pointer;
 }
-#l33 .button-container button:hover {
+#l33 .container .button-container button:hover {
   color: #d291bc;
 }
 
@@ -463,7 +485,7 @@ ul li {
 }
 @media (min-width: 1280px) {
   #hospital .transport-container {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 #hospital .transport-container .transport {

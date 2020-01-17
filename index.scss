@@ -32,9 +32,6 @@ main {
 
 section {
   height: auto;
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
 
   .container {
     background-position: top center;
@@ -47,7 +44,7 @@ section {
     @media (min-width: 768px) {
       padding: 48px;
       @media (min-width: 1280px) {
-        padding: 128px;
+        padding: 128px calc(50vw - 480px);
       }
     }
 
@@ -248,12 +245,15 @@ ul {
   background-image: url("./hanna.png");
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
 
   h1 {
     font-size: 24px;
     @media (min-width: 768px) {
-      font-size: 80px;
+      font-size: 72px;
+      @media (min-width: 1280px) {
+        font-size: 96px;
+      }
     }
     color: #fff;
     font-style: italic;
@@ -284,6 +284,29 @@ ul {
 
   div {
     color: #957dad;
+  }
+
+  .top-container {
+    width: 100%;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+      img {
+        border: 8px solid #fff;
+        max-width: 480px;
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+      .text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 24px;
+      }
+    }
   }
 }
 
@@ -319,9 +342,6 @@ ul {
 
     .left-side {
       width: 100%;
-      @media (min-width: 768px) {
-        width: 50%;
-      }
       padding: 8px;
 
       .surgery-description {
@@ -341,9 +361,6 @@ ul {
 
     .right-side {
       width: 100%;
-      @media (min-width: 768px) {
-        width: 50%;
-      }
       padding: 8px;
 
       h2 {
@@ -352,11 +369,27 @@ ul {
         color: #957dad;
         font-style: italic;
       }
+
       ul {
         padding: 0;
+
         li {
           list-style-type: none;
           margin-bottom: 1em;
+
+          .service-title {
+            font-weight: 600;
+            text-decoration: underline;
+          }
+
+          .service-desc {
+            font-size: 14px;
+          }
+
+          .service-price {
+            font-size: 14px;
+            font-weight: 600;
+          }
         }
       }
     }
@@ -380,6 +413,7 @@ ul {
       font-style: italic;
       color: #957dad;
       cursor: pointer;
+
       &:hover {
         color: #d291bc;
       }
@@ -400,67 +434,74 @@ ul {
     color: #fff;
   }
 
-  .content-container {
+  .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    .left-side {
+    h1 {
       width: 100%;
-      @media (min-width: 768px) {
-        width: 50%;
-      }
-      padding: 8px;
-
-      .surgery-description {
-        margin-bottom: 1em;
-      }
     }
 
-    .right-side {
-      width: 100%;
-      @media (min-width: 768px) {
-        width: 50%;
-      }
-      padding: 8px;
+    .content-container {
+      display: block;
 
-      h2 {
-        margin: 0 0 1em;
-        font-weight: 900;
-        color: #fff;
-        font-style: italic;
-      }
-      .reserve,
-      .time,
-      .price {
-        margin-bottom: 1em;
+      .left-side {
+        width: 100%;
+        padding: 8px;
 
-        .title {
+        .surgery-description {
+          margin-bottom: 1em;
+        }
+      }
+
+      .right-side {
+        width: 100%;
+        padding: 8px;
+
+        h2 {
+          margin: 0 0 1em;
           font-weight: 900;
+          color: #fff;
           font-style: italic;
+        }
+
+        .price,
+        .reserve,
+        .time {
+          margin-bottom: 1em;
+
+          .title {
+            font-weight: 900;
+            font-style: italic;
+          }
         }
       }
     }
-  }
-  .button-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 1em 0;
 
-    button {
-      font-size: 16px;
-      height: 60px;
-      background-color: #fff;
-      border: none;
-      width: 300px;
-      border-radius: 30px;
-      font-weight: 900;
-      letter-spacing: 1px;
-      font-style: italic;
-      color: #957dad;
-      cursor: pointer;
-      &:hover {
-        color: #d291bc;
+    .button-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 1em 0;
+
+      button {
+        font-size: 16px;
+        height: 60px;
+        background-color: #fff;
+        border: none;
+        width: 300px;
+        border-radius: 30px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        font-style: italic;
+        color: #957dad;
+        cursor: pointer;
+
+        &:hover {
+          color: #d291bc;
+        }
       }
     }
   }
@@ -488,7 +529,7 @@ ul {
     justify-content: space-between;
     flex-wrap: wrap;
     @media (min-width: 1280px) {
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
 
     .transport {
