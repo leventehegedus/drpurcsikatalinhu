@@ -1,0 +1,391 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 1280px) {
+  .showMobile {
+    display: none;
+  }
+}
+
+.hideMobile {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .hideMobile {
+    display: block;
+  }
+}
+
+main {
+  top: 48px;
+}
+
+section .container {
+  background-position: top center;
+  padding: 48px 24px;
+  background-size: cover;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 200;
+  line-height: 2em;
+}
+@media (min-width: 768px) {
+  section .container {
+    padding: 48px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  section .container {
+    padding: 128px;
+  }
+}
+section .container h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  section .container h1 {
+    font-size: 48px;
+    line-height: 1.5em;
+    margin: 48px 0;
+  }
+}
+section .container h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  section .container h2 {
+    font-size: 32px;
+    line-height: 1.5em;
+    margin: 32px 0;
+  }
+}
+section .container div {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+ul {
+  margin: 0;
+}
+ul li {
+  text-align: left;
+  margin: 8px 0;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  width: 240px;
+  height: 240px;
+}
+
+#fixedmenu {
+  height: 48px;
+  position: fixed;
+  width: 100%;
+  background-color: #FFEAE3;
+  text-transform: uppercase;
+  z-index: 100;
+  padding: 0;
+  background-image: none;
+}
+#fixedmenu .drpurcsi {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #fixedmenu .hideMobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #fixedmenu .showMobile {
+    display: none;
+  }
+}
+#fixedmenu .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#fixedmenu .container .openmenu {
+  height: 32px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 32px;
+}
+#fixedmenu .container .closebtn {
+  height: 32px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 32px;
+}
+#fixedmenu .container .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 48px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+#fixedmenu .container .sidenav ul {
+  padding: 0;
+}
+#fixedmenu .container .sidenav ul a {
+  text-decoration: none;
+  color: #ead5e6;
+  display: flex;
+  transition: 0.3s;
+  height: 48px;
+  font-size: 16px;
+  margin-right: 16px;
+  margin-left: 16px;
+  border-bottom: 1px solid #ead5e6;
+  font-weight: 400;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+#fixedmenu .container .sidenav ul a:first-child {
+  border-top: 1px solid;
+}
+@media (min-width: 768px) {
+  #fixedmenu ul {
+    height: 48px;
+    padding-right: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #fixedmenu ul a {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0 8px;
+  }
+}
+#fixedmenu ul a li {
+  color: #fff;
+  font-weight: 900;
+  margin: 0;
+  font-style: italic;
+}
+#fixedmenu ul a:hover li {
+  color: #957dad;
+  border-bottom: 3px solid #957dad;
+  margin-top: 3px;
+}
+#fixedmenu ul li {
+  font-size: 16px;
+  list-style-type: none;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+#landing {
+  background-color: #fec8d8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 35vh 0;
+  background-image: url("./hanna.png");
+  background-size: cover;
+}
+#landing h1 {
+  font-size: 80px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+#landing h2 {
+  font-size: 36px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+#introduction {
+  background-color: #ffdfd3;
+  height: 100vh;
+  display: block;
+}
+#introduction h1 {
+  font-size: 64px;
+  font-weight: 900;
+  font-style: italic;
+  color: #957dad;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 48px;
+}
+#introduction div {
+  color: #957dad;
+}
+
+#goals {
+  background-color: #d291bc;
+  height: 100vh;
+  display: block;
+}
+#goals h1 {
+  font-size: 64px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 48px;
+}
+#goals div {
+  color: #fff;
+}
+
+#schedule .surgery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 1280px) {
+  #schedule .surgery-container {
+    justify-content: space-evenly;
+  }
+}
+#schedule .surgery-container .surgery {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+@media (min-width: 1280px) {
+  #schedule .surgery-container .surgery {
+    width: 400px;
+  }
+}
+#schedule .surgery-container .surgery .surgery-description {
+  text-align: justify;
+}
+#schedule .surgery-container .surgery a {
+  color: #ead5e6;
+  text-decoration: none;
+}
+#schedule .surgery-container .surgery a:hover {
+  color: #eae8ff;
+}
+#schedule .surgery-container .surgery:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+#schedule .surgery-container .surgery .price,
+#schedule .surgery-container .surgery .reserve,
+#schedule .surgery-container .surgery .time {
+  text-align: left;
+}
+#schedule .surgery-container .surgery .title {
+  text-align: left;
+  margin: 16px 0 8px;
+}
+#schedule .surgery-container .surgery .title span {
+  font-weight: 500;
+}
+#schedule .surgery-container .surgery ul {
+  list-style-image: url("./pharmacy.svg");
+  padding-left: 24px;
+}
+
+#hospital div {
+  text-align: justify;
+}
+#hospital .transport-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 1280px) {
+  #hospital .transport-container {
+    justify-content: space-evenly;
+  }
+}
+#hospital .transport-container .transport {
+  background-color: #eae8ff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1280px) {
+  #hospital .transport-container .transport {
+    width: 400px;
+  }
+}
+#hospital .transport-container .transport:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+#hospital .transport-container .transport img {
+  width: 80px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+#footer {
+  background-color: #ead5e6;
+  color: #fff;
+  padding: 8px;
+  height: 48px;
+  background-image: none;
+}
+#footer .container {
+  padding: 0;
+}
+#footer .container div {
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
