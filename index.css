@@ -283,6 +283,44 @@ ul li {
   color: #fff;
 }
 
+#czeizel {
+  background-color: #fec8d8;
+  height: 100vh;
+  display: block;
+}
+#czeizel h1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  color: #957dad;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 48px;
+}
+#czeizel div {
+  color: #957dad;
+}
+
+#l33 {
+  background-color: #957dad;
+  height: 100vh;
+  display: block;
+}
+#l33 h1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 48px;
+}
+#l33 div {
+  color: #fff;
+}
+
 #schedule .surgery-container {
   display: flex;
   justify-content: center;
