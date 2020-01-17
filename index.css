@@ -115,12 +115,12 @@ ul li {
 #fixedmenu .drpurcsi {
   color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   #fixedmenu .hideMobile {
     display: block;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   #fixedmenu .showMobile {
     display: none;
   }
@@ -179,7 +179,7 @@ ul li {
 #fixedmenu .container .sidenav ul a:first-child {
   border-top: 1px solid;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   #fixedmenu ul {
     height: 48px;
     padding-right: 8px;
@@ -191,7 +191,7 @@ ul li {
     align-items: center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   #fixedmenu ul a {
     display: flex;
     align-items: center;
