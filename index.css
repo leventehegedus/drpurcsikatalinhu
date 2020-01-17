@@ -220,7 +220,7 @@ ul li {
   margin-left: 8px;
 }
 
-#landing {
+#home {
   background-color: #fec8d8;
   display: flex;
   justify-content: center;
@@ -232,23 +232,23 @@ ul li {
   background-size: cover;
   height: 100vh;
 }
-#landing h1 {
+#home h1 {
   font-size: 24px;
   color: #fff;
   font-style: italic;
   letter-spacing: 1px;
 }
 @media (min-width: 768px) {
-  #landing h1 {
+  #home h1 {
     font-size: 72px;
   }
 }
 @media (min-width: 768px) and (min-width: 1280px) {
-  #landing h1 {
+  #home h1 {
     font-size: 96px;
   }
 }
-#landing h2 {
+#home h2 {
   font-size: 24px;
   font-weight: 900;
   font-style: italic;
@@ -258,7 +258,7 @@ ul li {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #landing h2 {
+  #home h2 {
     font-size: 36px;
   }
 }
@@ -280,12 +280,19 @@ ul li {
   #introduction .top-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
   }
 }
 #introduction .top-container img {
   border: 8px solid #fff;
-  max-width: 480px;
   width: 100%;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  #introduction .top-container img {
+    max-width: 50%;
+  }
 }
 @media (min-width: 768px) {
   #introduction .top-container .text-container {
@@ -387,7 +394,10 @@ ul li {
   cursor: pointer;
 }
 #czeizel .button-container button:hover {
-  color: #d291bc;
+  background: #FFEAE3;
+}
+#czeizel .button-container button:focus {
+  outline: none;
 }
 
 #l33 {
@@ -461,7 +471,10 @@ ul li {
   cursor: pointer;
 }
 #l33 .container .button-container button:hover {
-  color: #d291bc;
+  background: #FFEAE3;
+}
+#l33 .container .button-container button:focus {
+  outline: none;
 }
 
 #hospital {

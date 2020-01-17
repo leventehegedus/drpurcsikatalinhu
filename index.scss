@@ -235,7 +235,7 @@ ul {
   }
 }
 
-#landing {
+#home {
   background-color: #fec8d8;
   display: flex;
   justify-content: center;
@@ -291,14 +291,19 @@ ul {
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      justify-content: center;
     }
-      img {
-        border: 8px solid #fff;
-        max-width: 480px;
-        width: 100%;
-      }
 
+    img {
+      border: 8px solid #fff;
+      width: 100%;
+      margin-bottom: 1em;
       @media (min-width: 768px) {
+        max-width: 50%;
+      }
+    }
+    @media (min-width: 768px) {
       .text-container {
         display: flex;
         justify-content: center;
@@ -415,7 +420,11 @@ ul {
       cursor: pointer;
 
       &:hover {
-        color: #d291bc;
+        background: #FFEAE3;
+      }
+
+      &:focus {
+        outline: none;
       }
     }
   }
@@ -500,7 +509,11 @@ ul {
         cursor: pointer;
 
         &:hover {
-          color: #d291bc;
+          background: #FFEAE3;
+        }
+
+        &:focus {
+          outline: none;
         }
       }
     }
