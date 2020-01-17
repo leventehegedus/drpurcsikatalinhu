@@ -18,20 +18,23 @@
 	<meta http-equiv="pragma" content="no-cache" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|Dosis:200&display=swap' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<section id="fixedmenu">
 		<div class="container">
-			<span class="showMobile drpurcsi">Dr. Purcsi Katalin</span>
 			<div class="showMobile">
 				<img src="assets/images/mobile_menu.svg" class="openmenu" onclick="openNav()"></img>
 				<div id="mySidenav" class="sidenav">
 					<img src="assets/images/close.svg" class="closebtn" onclick="closeNav()">
 					<ul>
+						<a href="#landing" onClick="closeNav()">Kezdőlap</a>
 						<a href="#introduction" onClick="closeNav()">Bemutatkozás</a>
-						<a href="#schedule" onclick="closeNav()">Rendelés</a>
-						<a href="#hospital" onclick="closeNav()">Kórházi háttér</a>
+						<a href="#goals" onClick="closeNav()">Céljaim</a>
+						<a href="#czeizel" onClick="closeNav()">Czeizel Intézet</a>
+						<a href="#l33" onClick="closeNav()">L33 Medical</a>
+						<a href="#hospital" onClick="closeNav()">Kórházi háttér</a>
+						<a href="#media" onclick="closeNav()">Referencia</a>
 					</ul>
 				</div>
 			</div>
@@ -80,28 +83,11 @@
 	</section>
 	<section id="czeizel">
 		<div class="container">
-			<h1>Rendelés<br/>Czeizel Intézet, Budapest</h1>
-			<div class="surgery-description">
-				<span>Szerda délutánonként a Czeizel Intézetben Budapest egyik legszebb környékén a Gellért hegy tetején a Bérc utca 23 szám alatt várom pácienseimet. Az autóval érkezők számára az intézet udvarán parkolási lehetőséget biztosítunk. Akik tömegközlekedéssel érkeznek a buszmegálló csupán 100m-re található.</span>
-			</div>
-		</div>
-	</section>
-	<section id="l33">
-		<div class="container">
-			<h1>Rendelés<br/>L33 Medical, Budaörs</h1>
-			<div class="surgery-description">
-				<span>Péntek délutánonként Budaörsön az L33 Medical rendelőben várom pácienseimet 14 órától 19 óráig. A rendelő barátságos környezetben a Lévai utca 33. szám alatt lett kialakítva egy 10 emeletes épület aljában. Gépkocsival érkező pácienseink ingyenesen parkolhatnak az épület előtt, akik tömegközlekedéssel érkeznek mind Kelenföldről mind a Széll Kálmán térről közvetlen buszjárattal megközelíthető.</span>
-			</div>
-		</div>
-	</section>
-	<section id="schedule">
-		<div class="container">
-			<h1>Rendelés</h1>
-			<div class="surgery-container">
-				<div class="surgery">
-					<h2>Czeizel Intézet, Budapest</h2>
+			<h1>Czeizel Intézet, Budapest</h1>
+			<div class="content-container">
+				<div class="left-side">
 					<div class="surgery-description">
-						<span>Szerda délutánonként a Czeizel Intézetben Budapest egyik legszebb környékén a Gellért hegy tetején a Bérc utca 23 szám alatt várom pácienseimet. Az autóval érkezők számára az intézet udvarán parkolási lehetőséget biztosítunk. Akik tömegközlekedéssel érkeznek a buszmegálló csupán 100m-re található.</span>
+						<span>Szerda délutánonként a Czeizel Intézetben Budapest egyik legszebb környékén a Gellért hegy tetején a <b>Bérc utca 23.</b> szám alatt várom pácienseimet. Az autóval érkezők számára az intézet udvarán parkolási lehetőséget biztosítunk. Akik tömegközlekedéssel érkeznek a buszmegálló csupán 100m-re található.</span>
 					</div>
 					<div class="time">
 						<div class="title">
@@ -113,42 +99,57 @@
 						<div class="title">
 							<span>Bejelentkezési lehetőség:</span>
 						</div>
-						<span>munkanapokon 07:00- 16:00 óra közt a 06/70-626-83-20-as telefonszámon</span></div>
-					<div class="price">
-						<div class="title">
-							<span>Szolgáltatások:</span>
-						</div>
-						<ul>
-							<li>Nőgyógyászati vizsgálat (vizsgálat, rákszűrés, Ultrahang, Emlő vizsgálat): 22.000 Ft</li>
-							<li>Nőgyógyászati vizsgálat rákszűrés nélkül: 20.000 Ft</li>
-							<li>Terhesgondozás: 20.000 Ft</li>
-							<li>Konzultáció, lelet megbeszélés: 15.000 Ft</li>
-							<li>Méhen belüli fogamzásgátló eszköz felhelyezése, vizsgálattal(eszköz nélkül): 25.000 Ft</li>
-							<li>Méhen belüli fogamzásgátló eszköz levétele, vizsgálattal: 20.000 Ft</li>
-						</ul>
-					</div>
+						<span>munkanapokon 07:00- 16:00 óra közt a <b>06/70-626-83-20-as</b> telefonszámon</span>
+					</div></div>
+				<div class="right-side">
+					<h2>Szolgáltatások</h2>
+					<ul>
+						<li>Nőgyógyászati vizsgálat (vizsgálat, rákszűrés, Ultrahang, Emlő vizsgálat): <i>22.000 Ft</i></li>
+						<li>Nőgyógyászati vizsgálat rákszűrés nélkül: <i>20.000 Ft</i></li>
+						<li>Terhesgondozás: <i>20.000 Ft</i></li>
+						<li>Konzultáció, lelet megbeszélés: <i>15.000 Ft</i></li>
+						<li>Méhen belüli fogamzásgátló eszköz felhelyezése, vizsgálattal(eszköz nélkül): <i>25.000 Ft</i></li>
+						<li>Méhen belüli fogamzásgátló eszköz levétele, vizsgálattal: <i>20.000 Ft</i></li>
+					</ul>
 				</div>
-				<div class="surgery">
-					<h2>L33 Medical, Budaörs</h2>
+			</div>
+			<div class="button-container">
+				<button>Bővebb információ</button>
+			</div>
+		</div>
+	</section>
+	<section id="l33">
+		<div class="container">
+			<h1>L33 Medical, Budaörs</h1>
+			<div class="content-container">
+				<div class="left-side">
 					<div class="surgery-description">
 						<span>Péntek délutánonként Budaörsön az L33 Medical rendelőben várom pácienseimet 14 órától 19 óráig. A rendelő barátságos környezetben a Lévai utca 33. szám alatt lett kialakítva egy 10 emeletes épület aljában. Gépkocsival érkező pácienseink ingyenesen parkolhatnak az épület előtt, akik tömegközlekedéssel érkeznek mind Kelenföldről mind a Széll Kálmán térről közvetlen buszjárattal megközelíthető.</span>
 					</div>
+				</div>
+				<div class="right-side">
 					<div class="time">
 						<div class="title">
-							<span>Rendelési idő:</span>
+							<span><b>Rendelési idő:</b></span>
 						</div>
-						<span>Péntek 14-19 óra</span></div>
+						<span>Péntek 14-19 óra</span>
+					</div>
 					<div class="reserve">
 						<div class="title">
-							<span>Bejelentkezési lehetőség:</span>
+							<span><b>Bejelentkezési lehetőség:</b></span>
 						</div>
-						Bővebb információ a <a href="https://budaors.l33medical.hu/kapcsolat/#idopontfoglalas" target="_blank">budaors.l33medical.hu</a> oldalon az időpontfoglalás menüpont alatt.</div>
+						<span>Bővebb információ a budaors.l33medical.hu oldalon az időpontfoglalás menüpont alatt.</span>
+					</div>
 					<div class="price">
 						<div class="title">
-							<span>Árak:</span>
+							<span><b>Árak:</b></span>
 						</div>
-						Bővebb információ a <a href="https://budaors.l33medical.hu/arak/" target="_blank">budaors.l33medical.hu</a> oldalon az árak menüpont alatt.</div>
+						<span>Bővebb információ a budaors.l33medical.hu oldalon az árak menüpont alatt.<span>
+					</div>
 				</div>
+			</div>
+			<div class="button-container">
+				<button>Bővebb információ</button>
 			</div>
 		</div>
 	</section>
@@ -169,10 +170,28 @@
 			</div>
 		</div>
 	</section>
+	<section id="media">
+		<div class="container">
+			<h1>Referencia</h1>
+			<div class="content-container">
+				<div class="img-container">
+					<img src="./katiemese.png"/>
+				</div>
+				<div class="quote">
+					<div class="title">
+						<span>"Ezúton szeretném megköszönni doktornőmnek, Purcsi Katalinnak, aki egyben a barátnőm is, hogy az ő óvó szemei és később kezei között születtek meg a gyerekeink..."</span>
+					</div>
+					<div class="quoter">
+						<span>Szász-Kovács Emese, olimpiai bajnok</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section id="footer">
 		<div class="container">
 			<div class="block-1">
-				<span>2019 All rights reserved</span>
+				<span>2020 All rights reserved</span>
 			</div>
 		</div>
 	</section>

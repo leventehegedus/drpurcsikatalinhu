@@ -30,13 +30,21 @@ main {
   top: 48px;
 }
 
+section {
+  height: auto;
+}
+@media (min-width: 768px) {
+  section {
+    height: 100vh;
+  }
+}
 section .container {
   background-position: top center;
   padding: 48px 24px;
   background-size: cover;
   width: 100%;
   letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 2em;
 }
 @media (min-width: 768px) {
@@ -51,15 +59,16 @@ section .container {
 }
 section .container h1 {
   font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  width: 100%;
+  margin: 0;
   text-align: center;
-  font-weight: 500;
-  text-align: center;
+  margin-bottom: 1em;
 }
 @media (min-width: 1280px) {
   section .container h1 {
-    font-size: 48px;
-    line-height: 1.5em;
-    margin: 48px 0;
+    font-size: 64px;
   }
 }
 section .container h2 {
@@ -158,15 +167,16 @@ ul li {
 }
 #fixedmenu .container .sidenav ul a {
   text-decoration: none;
-  color: #ead5e6;
+  color: #957dad;
   display: flex;
   transition: 0.3s;
   height: 48px;
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 16px;
   margin-left: 16px;
-  border-bottom: 1px solid #ead5e6;
-  font-weight: 400;
+  border-bottom: 1px solid #957dad;
+  font-weight: 900;
+  font-style: italic;
   align-items: center;
   justify-content: flex-start;
   white-space: nowrap;
@@ -197,14 +207,14 @@ ul li {
   }
 }
 #fixedmenu ul a li {
-  color: #fff;
+  color: #957dad;
   font-weight: 900;
   margin: 0;
   font-style: italic;
 }
 #fixedmenu ul a:hover li {
-  color: #957dad;
-  border-bottom: 3px solid #957dad;
+  color: #fff;
+  border-bottom: 3px solid #fff;
   margin-top: 3px;
 }
 #fixedmenu ul li {
@@ -217,17 +227,29 @@ ul li {
 
 #landing {
   background-color: #fec8d8;
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   padding: 35vh 0;
   background-image: url("./hanna.png");
+  background-position: center;
   background-size: cover;
+  min-height: 100vh;
 }
 #landing h1 {
-  font-size: 80px;
+  font-size: 24px;
+  color: #fff;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+@media (min-width: 768px) {
+  #landing h1 {
+    font-size: 80px;
+  }
+}
+#landing h2 {
+  font-size: 24px;
   font-weight: 900;
   font-style: italic;
   color: #fff;
@@ -235,30 +257,18 @@ ul li {
   margin: 0;
   text-align: center;
 }
-#landing h2 {
-  font-size: 36px;
-  font-weight: 900;
-  font-style: italic;
-  color: #fff;
-  width: 100%;
-  margin: 0;
-  text-align: center;
+@media (min-width: 768px) {
+  #landing h2 {
+    font-size: 36px;
+  }
 }
 
 #introduction {
   background-color: #ffdfd3;
-  height: 100vh;
   display: block;
 }
 #introduction h1 {
-  font-size: 64px;
-  font-weight: 900;
-  font-style: italic;
   color: #957dad;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  margin-bottom: 48px;
 }
 #introduction div {
   color: #957dad;
@@ -266,18 +276,10 @@ ul li {
 
 #goals {
   background-color: #d291bc;
-  height: 100vh;
   display: block;
 }
 #goals h1 {
-  font-size: 64px;
-  font-weight: 900;
-  font-style: italic;
   color: #fff;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  margin-bottom: 48px;
 }
 #goals div {
   color: #fff;
@@ -285,95 +287,174 @@ ul li {
 
 #czeizel {
   background-color: #fec8d8;
-  height: 100vh;
   display: block;
 }
 #czeizel h1 {
   font-size: 40px;
-  font-weight: 900;
-  font-style: italic;
   color: #957dad;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  margin-bottom: 48px;
 }
 #czeizel div {
   color: #957dad;
 }
+#czeizel .content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#czeizel .content-container .left-side {
+  width: 100%;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #czeizel .content-container .left-side {
+    width: 50%;
+  }
+}
+#czeizel .content-container .left-side .surgery-description {
+  margin-bottom: 1em;
+}
+#czeizel .content-container .left-side .reserve,
+#czeizel .content-container .left-side .time {
+  margin-bottom: 1em;
+}
+#czeizel .content-container .left-side .reserve .title,
+#czeizel .content-container .left-side .time .title {
+  font-weight: 900;
+  font-style: italic;
+}
+#czeizel .content-container .right-side {
+  width: 100%;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #czeizel .content-container .right-side {
+    width: 50%;
+  }
+}
+#czeizel .content-container .right-side h2 {
+  margin: 0 0 1em;
+  font-weight: 900;
+  color: #957dad;
+  font-style: italic;
+}
+#czeizel .content-container .right-side ul {
+  padding: 0;
+}
+#czeizel .content-container .right-side ul li {
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+#czeizel .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+#czeizel .button-container button {
+  font-size: 16px;
+  height: 60px;
+  background-color: #fff;
+  border: none;
+  width: 300px;
+  border-radius: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #957dad;
+  cursor: pointer;
+}
+#czeizel .button-container button:hover {
+  color: #d291bc;
+}
 
 #l33 {
   background-color: #957dad;
-  height: 100vh;
   display: block;
 }
 #l33 h1 {
   font-size: 40px;
-  font-weight: 900;
-  font-style: italic;
   color: #fff;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  margin-bottom: 48px;
 }
 #l33 div {
   color: #fff;
 }
-
-#schedule .surgery-container {
+#l33 .content-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
-@media (min-width: 1280px) {
-  #schedule .surgery-container {
-    justify-content: space-evenly;
+#l33 .content-container .left-side {
+  width: 100%;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #l33 .content-container .left-side {
+    width: 50%;
   }
 }
-#schedule .surgery-container .surgery {
+#l33 .content-container .left-side .surgery-description {
+  margin-bottom: 1em;
+}
+#l33 .content-container .right-side {
+  width: 100%;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #l33 .content-container .right-side {
+    width: 50%;
+  }
+}
+#l33 .content-container .right-side h2 {
+  margin: 0 0 1em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+}
+#l33 .content-container .right-side .reserve,
+#l33 .content-container .right-side .time,
+#l33 .content-container .right-side .price {
+  margin-bottom: 1em;
+}
+#l33 .content-container .right-side .reserve .title,
+#l33 .content-container .right-side .time .title,
+#l33 .content-container .right-side .price .title {
+  font-weight: 900;
+  font-style: italic;
+}
+#l33 .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+#l33 .button-container button {
+  font-size: 16px;
+  height: 60px;
   background-color: #fff;
-  padding: 24px;
-  border-radius: 16px;
-  margin-bottom: 32px;
+  border: none;
+  width: 300px;
+  border-radius: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #957dad;
+  cursor: pointer;
 }
-@media (min-width: 1280px) {
-  #schedule .surgery-container .surgery {
-    width: 400px;
-  }
-}
-#schedule .surgery-container .surgery .surgery-description {
-  text-align: justify;
-}
-#schedule .surgery-container .surgery a {
-  color: #ead5e6;
-  text-decoration: none;
-}
-#schedule .surgery-container .surgery a:hover {
-  color: #eae8ff;
-}
-#schedule .surgery-container .surgery:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-}
-#schedule .surgery-container .surgery .price,
-#schedule .surgery-container .surgery .reserve,
-#schedule .surgery-container .surgery .time {
-  text-align: left;
-}
-#schedule .surgery-container .surgery .title {
-  text-align: left;
-  margin: 16px 0 8px;
-}
-#schedule .surgery-container .surgery .title span {
-  font-weight: 500;
-}
-#schedule .surgery-container .surgery ul {
-  list-style-image: url("./pharmacy.svg");
-  padding-left: 24px;
+#l33 .button-container button:hover {
+  color: #d291bc;
 }
 
+#hospital {
+  background-color: #ffdfd3;
+}
+#hospital h1 {
+  color: #957dad;
+}
 #hospital div {
-  text-align: justify;
+  color: #957dad;
+}
+#hospital h2 {
+  font-weight: 900;
+  color: #957dad;
+  font-style: italic;
 }
 #hospital .transport-container {
   display: flex;
@@ -386,7 +467,7 @@ ul li {
   }
 }
 #hospital .transport-container .transport {
-  background-color: #eae8ff;
+  background-color: #957dad;
   border-radius: 16px;
   padding: 24px;
   width: 100%;
@@ -401,20 +482,65 @@ ul li {
     width: 400px;
   }
 }
-#hospital .transport-container .transport:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+#hospital .transport-container .transport span {
+  color: #fff;
 }
 #hospital .transport-container .transport img {
   width: 80px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 40px;
   padding: 8px;
   margin-bottom: 24px;
 }
 
-#footer {
-  background-color: #ead5e6;
+#media {
+  background-color: #d291bc;
+}
+#media h1 {
   color: #fff;
+}
+#media div {
+  color: #fff;
+}
+#media .content-container .img-container {
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+}
+#media .content-container .img-container img {
+  border: 8px solid #fff;
+  width: 100%;
+  max-width: 470px;
+}
+#media .content-container .quote {
+  width: 100%;
+  padding: 24px;
+}
+#media .content-container .quote .title {
+  font-family: "Dosis", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 1em;
+  line-height: 1em;
+}
+@media (min-width: 768px) {
+  #media .content-container .quote .title {
+    font-size: 32px;
+  }
+}
+#media .content-container .quote .quoter {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+}
+
+#footer {
+  background-color: #FFEAE3;
+  color: #957dad;
   padding: 8px;
   height: 48px;
   background-image: none;

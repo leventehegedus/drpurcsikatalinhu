@@ -31,22 +31,18 @@ main {
 }
 
 section {
-  // width: 100%;
-  // background-color: $dr-glitter;
-  // background-repeat: no-repeat;
-  // background-position: top center;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
-  // position: relative;
+  height: auto;
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+
   .container {
     background-position: top center;
     padding: 48px 24px;
     background-size: cover;
     width: 100%;
     letter-spacing: 1px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 2em;
     @media (min-width: 768px) {
       padding: 48px;
@@ -57,13 +53,14 @@ section {
 
     h1 {
       font-size: 32px;
+      font-weight: 900;
+      font-style: italic;
+      width: 100%;
+      margin: 0;
       text-align: center;
-      font-weight: 500;
-      text-align: center;
+      margin-bottom: 1em;
       @media (min-width: 1280px) {
-        font-size: 48px;
-        line-height: 1.5em;
-        margin: 48px 0;
+        font-size: 64px;
       }
     }
 
@@ -171,15 +168,16 @@ ul {
 
         a {
           text-decoration: none;
-          color: $dr-platinum;
+          color: #957dad;
           display: flex;
           transition: 0.3s;
           height: 48px;
-          font-size: 16px;
+          font-size: 14px;
           margin-right: 16px;
           margin-left: 16px;
-          border-bottom: 1px solid $dr-platinum;
-          font-weight: 400;
+          border-bottom: 1px solid #957dad;
+          font-weight: 900;
+          font-style: italic;
           align-items: center;
           justify-content: flex-start;
           white-space: nowrap;
@@ -215,7 +213,7 @@ ul {
       }
 
       li {
-        color: #fff;
+        color: #957dad;
         font-weight: 900;
         margin: 0;
         font-style: italic;
@@ -223,8 +221,8 @@ ul {
 
       &:hover {
         li {
-          color: #957dad;
-          border-bottom: 3px solid #957dad;
+          color: #fff;
+          border-bottom: 3px solid #fff;
           margin-top: 3px;
         }
       }
@@ -242,27 +240,31 @@ ul {
 
 #landing {
   background-color: #fec8d8;
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   padding: 35vh 0;
   background-image: url("./hanna.png");
+  background-position: center;
   background-size: cover;
+  min-height: 100vh;
 
   h1 {
-    font-size: 80px;
-    font-weight: 900;
-    font-style: italic;
+    font-size: 24px;
+    @media (min-width: 768px) {
+      font-size: 80px;
+    }
     color: #fff;
-    width: 100%;
-    margin: 0;
-    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 24px;
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
     font-weight: 900;
     font-style: italic;
     color: #fff;
@@ -274,18 +276,10 @@ ul {
 
 #introduction {
   background-color: #ffdfd3;
-  height: 100vh;
   display: block;
 
   h1 {
-    font-size: 64px;
-    font-weight: 900;
-    font-style: italic;
     color: #957dad;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 48px;
   }
 
   div {
@@ -295,18 +289,10 @@ ul {
 
 #goals {
   background-color: #d291bc;
-  height: 100vh;
   display: block;
 
   h1 {
-    font-size: 64px;
-    font-weight: 900;
-    font-style: italic;
     color: #fff;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 48px;
   }
 
   div {
@@ -316,107 +302,185 @@ ul {
 
 #czeizel {
   background-color: #fec8d8;
-  height: 100vh;
   display: block;
 
   h1 {
     font-size: 40px;
-    font-weight: 900;
-    font-style: italic;
     color: #957dad;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 48px;
   }
 
   div {
     color: #957dad;
+  }
+
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .left-side {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+      padding: 8px;
+
+      .surgery-description {
+        margin-bottom: 1em;
+      }
+
+      .reserve,
+      .time {
+        margin-bottom: 1em;
+
+        .title {
+          font-weight: 900;
+          font-style: italic;
+        }
+      }
+    }
+
+    .right-side {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+      padding: 8px;
+
+      h2 {
+        margin: 0 0 1em;
+        font-weight: 900;
+        color: #957dad;
+        font-style: italic;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style-type: none;
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+
+    button {
+      font-size: 16px;
+      height: 60px;
+      background-color: #fff;
+      border: none;
+      width: 300px;
+      border-radius: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-style: italic;
+      color: #957dad;
+      cursor: pointer;
+      &:hover {
+        color: #d291bc;
+      }
+    }
   }
 }
 
 #l33 {
   background-color: #957dad;
-  height: 100vh;
   display: block;
 
   h1 {
     font-size: 40px;
-    font-weight: 900;
-    font-style: italic;
     color: #fff;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 48px;
   }
 
   div {
     color: #fff;
   }
-}
 
-#schedule {
-  .surgery-container {
+  .content-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    @media (min-width: 1280px) {
-      justify-content: space-evenly;
-    }
 
-    .surgery {
-      background-color: $dr-white;
-      padding: 24px;
-      border-radius: 16px;
-      margin-bottom: 32px;
-      @media (min-width: 1280px) {
-        width: 400px;
+    .left-side {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 50%;
       }
+      padding: 8px;
 
       .surgery-description {
-        text-align: justify;
+        margin-bottom: 1em;
       }
+    }
 
-      a {
-        color: $dr-platinum;
-        text-decoration: none;
-
-        &:hover {
-          color: $dr-glitter;
-        }
+    .right-side {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 50%;
       }
+      padding: 8px;
 
-      &:hover {
-        box-shadow: 0 0 8px rgba(0,0,0,0.25);
+      h2 {
+        margin: 0 0 1em;
+        font-weight: 900;
+        color: #fff;
+        font-style: italic;
       }
-
-      .price,
       .reserve,
-      .time {
-        text-align: left;
-      }
+      .time,
+      .price {
+        margin-bottom: 1em;
 
-      .title {
-        text-align: left;
-        margin: 16px 0 8px;
-
-        span {
-          font-weight: 500;
+        .title {
+          font-weight: 900;
+          font-style: italic;
         }
       }
+    }
+  }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
 
-      ul {
-        list-style-image: url("./pharmacy.svg");
-        padding-left: 24px;
+    button {
+      font-size: 16px;
+      height: 60px;
+      background-color: #fff;
+      border: none;
+      width: 300px;
+      border-radius: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-style: italic;
+      color: #957dad;
+      cursor: pointer;
+      &:hover {
+        color: #d291bc;
       }
     }
   }
 }
 
 #hospital {
+  background-color: #ffdfd3;
+
+  h1 {
+    color: #957dad;
+  }
+
   div {
-    text-align: justify;
+    color: #957dad;
+  }
+
+  h2 {
+    font-weight: 900;
+    color: #957dad;
+    font-style: italic;
   }
 
   .transport-container {
@@ -428,7 +492,7 @@ ul {
     }
 
     .transport {
-      background-color: $dr-glitter;
+      background-color: #957dad;
       border-radius: 16px;
       padding: 24px;
       width: 100%;
@@ -441,13 +505,13 @@ ul {
         width: 400px;
       }
 
-      &:hover {
-        box-shadow: 0 0 8px rgba(0,0,0,0.25);
+      span {
+        color: #fff;
       }
 
       img {
         width: 80px;
-        background-color: white;
+        background-color: #fff;
         border-radius: 40px;
         padding: 8px;
         margin-bottom: 24px;
@@ -456,9 +520,61 @@ ul {
   }
 }
 
+#media {
+  background-color: #d291bc;
+
+  h1 {
+    color: #fff;
+  }
+
+  div {
+    color: #fff;
+  }
+
+  .content-container {
+    .img-container {
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+
+      img {
+        border: 8px solid #fff;
+        width: 100%;
+        max-width: 470px;
+      }
+    }
+
+    .quote {
+      width: 100%;
+      padding: 24px;
+
+      .title {
+        font-family: "Dosis", sans-serif;
+        font-size: 24px;
+        @media (min-width: 768px) {
+          font-size: 32px;
+        }
+        font-weight: 200;
+        font-style: italic;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 1em;
+        line-height: 1em;
+      }
+
+      .quoter {
+        font-size: 24px;
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+      }
+    }
+  }
+}
+
 #footer {
-  background-color: $dr-platinum;
-  color: $dr-white;
+  background-color: #FFEAE3;
+  color: #957dad;
   padding: 8px;
   height: 48px;
   background-image: none;
