@@ -26,8 +26,10 @@ html {
   }
 }
 
-main {
-  top: 48px;
+iframe {
+  width: 100%;
+  margin-bottom: -4px;
+  filter: saturate(0.4);
 }
 
 section {
@@ -62,10 +64,11 @@ section {
     }
 
     h2 {
-      font-weight: 500;
+      font-weight: 900;
       font-size: 24px;
-      color: $dr-black;
+      color: #fff;
       text-align: center;
+      font-style: italic;
       @media (min-width: 1280px) {
         font-size: 32px;
         line-height: 1.5em;
@@ -214,6 +217,7 @@ ul {
         font-weight: 900;
         margin: 0;
         font-style: italic;
+        font-style: 14px;
       }
 
       &:hover {
@@ -242,10 +246,13 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   padding: 35vh 0;
-  background-image: url("./hanna.png");
+  background-image: url("./hanna_mobile.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
+  @media (min-width: 768px) {
+    background-image: url("./hanna.png");
+  }
 
   h1 {
     font-size: 24px;
@@ -404,7 +411,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 1em 0;
+    margin: 2em 0;
 
     button {
       font-size: 16px;
@@ -441,6 +448,9 @@ ul {
 
   div {
     color: #fff;
+    a {
+      color: #fff;
+    }
   }
 
   .container {
@@ -493,7 +503,7 @@ ul {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin: 1em 0;
+      margin: 2em 0;
 
       button {
         font-size: 16px;
@@ -535,6 +545,25 @@ ul {
     font-weight: 900;
     color: #957dad;
     font-style: italic;
+  }
+
+  .img-container {
+    width: 100%;
+    justify-content: space-around;
+    margin: 1em 0;
+    display: block;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 100%;
+      border: 8px solid #fff;
+      @media (min-width: 768px) {
+        width: 45%;
+      }
+    }
   }
 
   .transport-container {
@@ -626,18 +655,45 @@ ul {
   }
 }
 
+#contact {
+  background-color: #957dad;
+
+  h1 {
+    color: #fff;
+  }
+
+  div {
+    color: #fff;
+    text-align: center;
+  }
+  a {
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
 #footer {
   background-color: #FFEAE3;
   color: #957dad;
   padding: 8px;
-  height: 48px;
   background-image: none;
 
   .container {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     div {
       text-align: center;
+      white-space: nowrap;
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #957dad;
+      }
     }
   }
 }

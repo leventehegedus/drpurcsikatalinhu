@@ -26,8 +26,10 @@ html {
   }
 }
 
-main {
-  top: 48px;
+iframe {
+  width: 100%;
+  margin-bottom: -4px;
+  filter: saturate(0.4);
 }
 
 section {
@@ -67,10 +69,11 @@ section .container h1 {
   }
 }
 section .container h2 {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 24px;
-  color: #000;
+  color: #fff;
   text-align: center;
+  font-style: italic;
 }
 @media (min-width: 1280px) {
   section .container h2 {
@@ -206,6 +209,7 @@ ul li {
   font-weight: 900;
   margin: 0;
   font-style: italic;
+  font-style: 14px;
 }
 #fixedmenu ul a:hover li {
   color: #fff;
@@ -227,10 +231,15 @@ ul li {
   flex-wrap: wrap;
   align-items: center;
   padding: 35vh 0;
-  background-image: url("./hanna.png");
+  background-image: url("./hanna_mobile.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+@media (min-width: 768px) {
+  #home {
+    background-image: url("./hanna.png");
+  }
 }
 #home h1 {
   font-size: 24px;
@@ -378,7 +387,7 @@ ul li {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 #czeizel .button-container button {
   font-size: 16px;
@@ -409,6 +418,9 @@ ul li {
   color: #fff;
 }
 #l33 div {
+  color: #fff;
+}
+#l33 div a {
   color: #fff;
 }
 #l33 .container {
@@ -455,7 +467,7 @@ ul li {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 #l33 .container .button-container button {
   font-size: 16px;
@@ -490,6 +502,27 @@ ul li {
   font-weight: 900;
   color: #957dad;
   font-style: italic;
+}
+#hospital .img-container {
+  width: 100%;
+  justify-content: space-around;
+  margin: 1em 0;
+  display: block;
+}
+@media (min-width: 768px) {
+  #hospital .img-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+#hospital .img-container img {
+  width: 100%;
+  border: 8px solid #fff;
+}
+@media (min-width: 768px) {
+  #hospital .img-container img {
+    width: 45%;
+  }
 }
 #hospital .transport-container {
   display: flex;
@@ -573,18 +606,42 @@ ul li {
   text-align: center;
 }
 
+#contact {
+  background-color: #957dad;
+}
+#contact h1 {
+  color: #fff;
+}
+#contact div {
+  color: #fff;
+  text-align: center;
+}
+#contact a {
+  color: #fff;
+  cursor: pointer;
+}
+
 #footer {
   background-color: #FFEAE3;
   color: #957dad;
   padding: 8px;
-  height: 48px;
   background-image: none;
 }
 #footer .container {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #footer .container div {
   text-align: center;
+  white-space: nowrap;
+}
+#footer .container div a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #957dad;
 }
 
 /*# sourceMappingURL=index.css.map */
