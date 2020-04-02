@@ -636,12 +636,12 @@ ul li {
   font-weight: 900;
   letter-spacing: 1px;
   font-style: italic;
-  color: #d291bc;
+  color: #CE2D4F;
   cursor: pointer;
 }
 #contact .button-container button:hover {
+  background-color: #CE2D4F;
   color: #FFEAE3;
-  background-color: #d291bc;
 }
 #contact .button-container button:focus {
   outline: none;
