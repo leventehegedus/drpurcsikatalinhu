@@ -448,6 +448,7 @@ ul {
 
   div {
     color: #fff;
+
     a {
       color: #fff;
     }
@@ -666,10 +667,12 @@ ul {
     color: #fff;
     text-align: center;
   }
+
   a {
     color: #fff;
     cursor: pointer;
   }
+
   .button-container {
     width: 100%;
     display: flex;
@@ -679,18 +682,20 @@ ul {
     button {
       font-size: 16px;
       height: 60px;
-      background-color: #fff;
+      background-color: #FFEAE3;
       border: none;
       width: 300px;
       border-radius: 30px;
       font-weight: 900;
       letter-spacing: 1px;
       font-style: italic;
-      color: #957dad;
+      color: #d291bc;
       cursor: pointer;
 
       &:hover {
-        background: #FFEAE3;
+        color: #FFEAE3;
+        background-color: #d291bc;
+
       }
 
       &:focus {
