@@ -180,7 +180,7 @@ ul li {
   white-space: nowrap;
 }
 #fixedmenu .container .sidenav ul a.red {
-  color: #CE2D4F;
+  color: #963D5A;
 }
 #fixedmenu .container .sidenav ul a:first-child {
   border-top: 1px solid;
@@ -215,7 +215,7 @@ ul li {
   font-style: 14px;
 }
 #fixedmenu ul a li.red {
-  color: #CE2D4F;
+  color: #963D5A;
 }
 #fixedmenu ul a:hover li {
   color: #fff;
@@ -409,10 +409,10 @@ ul li {
   cursor: pointer;
 }
 #czeizel .button-container button.red {
-  color: #CE2D4F;
+  color: #963D5A;
 }
 #czeizel .button-container button.red:hover {
-  background-color: #CE2D4F;
+  background-color: #963D5A;
   color: #FFEAE3;
 }
 #czeizel .button-container button:hover {
@@ -649,11 +649,11 @@ ul li {
   font-weight: 900;
   letter-spacing: 1px;
   font-style: italic;
-  color: #CE2D4F;
+  color: #963D5A;
   cursor: pointer;
 }
 #contact .button-container button:hover {
-  background-color: #CE2D4F;
+  background-color: #963D5A;
   color: #FFEAE3;
 }
 #contact .button-container button:focus {
