@@ -429,20 +429,14 @@ ul {
       font-weight: 900;
       letter-spacing: 1px;
       font-style: italic;
-      color: #957dad;
       cursor: pointer;
-      &.red {
-        color: #963D5A;
-
-        &:hover {
-          background-color: #963D5A;
-          color: #FFEAE3;
-        }
-      }
+      color: #963D5A;
 
       &:hover {
-        background: #FFEAE3;
+        background-color: #963D5A;
+        color: #FFEAE3;
       }
+
 
       &:focus {
         outline: none;
@@ -530,11 +524,12 @@ ul {
         font-weight: 900;
         letter-spacing: 1px;
         font-style: italic;
-        color: #957dad;
         cursor: pointer;
+        color: #963D5A;
 
         &:hover {
-          background: #FFEAE3;
+          background-color: #963D5A;
+          color: #FFEAE3;
         }
 
         &:focus {
@@ -696,7 +691,7 @@ ul {
     button {
       font-size: 16px;
       height: 60px;
-      background-color: #FFEAE3;
+      background-color: #fff;
       border: none;
       width: 300px;
       border-radius: 30px;
@@ -708,7 +703,7 @@ ul {
 
       &:hover {
         background-color: #963D5A;
-        color: #FFEAE3;
+        color: #fff;
       }
 
       &:focus {

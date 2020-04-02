@@ -405,18 +405,12 @@ ul li {
   font-weight: 900;
   letter-spacing: 1px;
   font-style: italic;
-  color: #957dad;
   cursor: pointer;
-}
-#czeizel .button-container button.red {
   color: #963D5A;
 }
-#czeizel .button-container button.red:hover {
+#czeizel .button-container button:hover {
   background-color: #963D5A;
   color: #FFEAE3;
-}
-#czeizel .button-container button:hover {
-  background: #FFEAE3;
 }
 #czeizel .button-container button:focus {
   outline: none;
@@ -492,11 +486,12 @@ ul li {
   font-weight: 900;
   letter-spacing: 1px;
   font-style: italic;
-  color: #957dad;
   cursor: pointer;
+  color: #963D5A;
 }
 #l33 .container .button-container button:hover {
-  background: #FFEAE3;
+  background-color: #963D5A;
+  color: #FFEAE3;
 }
 #l33 .container .button-container button:focus {
   outline: none;
@@ -642,7 +637,7 @@ ul li {
 #contact .button-container button {
   font-size: 16px;
   height: 60px;
-  background-color: #FFEAE3;
+  background-color: #fff;
   border: none;
   width: 300px;
   border-radius: 30px;
@@ -654,7 +649,7 @@ ul li {
 }
 #contact .button-container button:hover {
   background-color: #963D5A;
-  color: #FFEAE3;
+  color: #fff;
 }
 #contact .button-container button:focus {
   outline: none;
