@@ -670,6 +670,34 @@ ul {
     color: #fff;
     cursor: pointer;
   }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+
+    button {
+      font-size: 16px;
+      height: 60px;
+      background-color: #fff;
+      border: none;
+      width: 300px;
+      border-radius: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-style: italic;
+      color: #957dad;
+      cursor: pointer;
+
+      &:hover {
+        background: #FFEAE3;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 }
 
 #footer {

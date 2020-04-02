@@ -620,6 +620,31 @@ ul li {
   color: #fff;
   cursor: pointer;
 }
+#contact .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+#contact .button-container button {
+  font-size: 16px;
+  height: 60px;
+  background-color: #fff;
+  border: none;
+  width: 300px;
+  border-radius: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #957dad;
+  cursor: pointer;
+}
+#contact .button-container button:hover {
+  background: #FFEAE3;
+}
+#contact .button-container button:focus {
+  outline: none;
+}
 
 #footer {
   background-color: #FFEAE3;
