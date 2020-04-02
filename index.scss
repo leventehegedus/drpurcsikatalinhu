@@ -181,6 +181,9 @@ ul {
           align-items: center;
           justify-content: flex-start;
           white-space: nowrap;
+          &.red {
+            color: #CE2D4F;
+          }
 
           &:first-child {
             border-top: 1px solid;
@@ -218,6 +221,9 @@ ul {
         margin: 0;
         font-style: italic;
         font-style: 14px;
+        &.red {
+          color: #CE2D4F;
+        }
       }
 
       &:hover {
@@ -425,6 +431,14 @@ ul {
       font-style: italic;
       color: #957dad;
       cursor: pointer;
+      &.red {
+        color: #CE2D4F;
+
+        &:hover {
+          background-color: #CE2D4F;
+          color: #FFEAE3;
+        }
+      }
 
       &:hover {
         background: #FFEAE3;

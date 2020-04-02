@@ -179,6 +179,9 @@ ul li {
   justify-content: flex-start;
   white-space: nowrap;
 }
+#fixedmenu .container .sidenav ul a.red {
+  color: #CE2D4F;
+}
 #fixedmenu .container .sidenav ul a:first-child {
   border-top: 1px solid;
 }
@@ -210,6 +213,9 @@ ul li {
   margin: 0;
   font-style: italic;
   font-style: 14px;
+}
+#fixedmenu ul a li.red {
+  color: #CE2D4F;
 }
 #fixedmenu ul a:hover li {
   color: #fff;
@@ -401,6 +407,13 @@ ul li {
   font-style: italic;
   color: #957dad;
   cursor: pointer;
+}
+#czeizel .button-container button.red {
+  color: #CE2D4F;
+}
+#czeizel .button-container button.red:hover {
+  background-color: #CE2D4F;
+  color: #FFEAE3;
 }
 #czeizel .button-container button:hover {
   background: #FFEAE3;
