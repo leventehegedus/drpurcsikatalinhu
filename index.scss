@@ -181,6 +181,7 @@ ul {
           align-items: center;
           justify-content: flex-start;
           white-space: nowrap;
+
           &.red {
             color: #963D5A;
           }
@@ -221,6 +222,7 @@ ul {
         margin: 0;
         font-style: italic;
         font-style: 14px;
+
         &.red {
           color: #963D5A;
         }
@@ -436,7 +438,6 @@ ul {
         background-color: #963D5A;
         color: #FFEAE3;
       }
-
 
       &:focus {
         outline: none;
@@ -735,6 +736,45 @@ ul {
         text-decoration: none;
         color: #957dad;
       }
+    }
+  }
+}
+
+.modal-container {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  &.closed {
+    display: none;
+  }
+
+  .modal {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    line-height: 1.5em;
+    border: 4px solid #957dad;
+    box-shadow: 0 10px 10px rgb(0,0,0,0.2);
+    font-size: 14px;
+    @media (min-width: 1280px){
+      font-size: 16px;
+      width: 640px;
+    }
+    .close-modal-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
     }
   }
 }

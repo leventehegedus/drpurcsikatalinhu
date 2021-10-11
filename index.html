@@ -355,10 +355,31 @@
 				<a href="https://drpurcsikatalin.hu">drpurcsikatalin.hu</a>
 			</div>
 			<div class="creator">
-				<a href="http://leventehegedus.hu/cv">készítette: Hegedüs Levente</a>
+				<a href="https://www.linkedin.com/in/levente-heged%C3%BCs-79197b98/">készítette: Hegedüs Levente</a>
 			</div>
 		</div>
 	</section>
+	<div class="modal-container" id="modal" onclick="closeModal()">
+		<div class="modal">
+			<img src="assets/images/close.svg" class="close-modal-btn" onclick="closeModal()">
+			<div>
+				<span>Kedves Pácienseim!</span>
+			</div>
+			<br />
+			<div>
+				<span>
+					Szeretettel tájékoztatom Önöket, hogy szeptember elején megszületett második kislányom, így átmenetileg a rendeléseim szünetelnek. 2022.februártól ismételten várom Önöket, addig is e-mailben vagy telefonon bármikor elérhető vagyok és amiben így itthonról tudok segítek Önöknek. Keressenek bizalommal.
+				</span>
+			</div>
+			<br />
+			<div>
+				<span>
+					Üdvözlettel:
+					Dr. Purcsi Katalin
+				</span>
+			</div>
+		</div>
+	</div>
 	<script>
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "60%";
@@ -368,6 +389,11 @@
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 			document.getElementById("mySidenav").style.opacity = "0.1";
+		}
+		function closeModal(){
+			if(document.getElementById('modal')){
+				document.getElementById('modal').classList.add('closed');
+			}
 		}
 	</script>
 </body>
