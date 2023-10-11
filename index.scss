@@ -21,6 +21,7 @@ html {
 
 .hideMobile {
   display: none;
+
   @media (min-width: 1280px) {
     display: block;
   }
@@ -43,8 +44,10 @@ section {
     letter-spacing: 1px;
     font-weight: 400;
     line-height: 2em;
+
     @media (min-width: 768px) {
       padding: 48px;
+
       @media (min-width: 1280px) {
         padding: 128px calc(50vw - 480px);
       }
@@ -58,6 +61,7 @@ section {
       margin: 0;
       text-align: center;
       margin-bottom: 1em;
+
       @media (min-width: 1280px) {
         font-size: 64px;
       }
@@ -69,6 +73,7 @@ section {
       color: #fff;
       text-align: center;
       font-style: italic;
+
       @media (min-width: 1280px) {
         font-size: 32px;
         line-height: 1.5em;
@@ -221,7 +226,7 @@ ul {
         font-weight: 900;
         margin: 0;
         font-style: italic;
-        font-style: 14px;
+        font-size: 14px;
 
         &.red {
           color: #963D5A;
@@ -258,18 +263,22 @@ ul {
   background-position: center;
   background-size: cover;
   height: 100vh;
+
   @media (min-width: 768px) {
     background-image: url("./hanna.png");
   }
 
   h1 {
     font-size: 24px;
+
     @media (min-width: 768px) {
       font-size: 72px;
+
       @media (min-width: 1280px) {
         font-size: 96px;
       }
     }
+
     color: #fff;
     font-style: italic;
     letter-spacing: 1px;
@@ -277,9 +286,11 @@ ul {
 
   h2 {
     font-size: 24px;
+
     @media (min-width: 768px) {
       font-size: 36px;
     }
+
     font-weight: 900;
     font-style: italic;
     color: #fff;
@@ -303,6 +314,7 @@ ul {
 
   .top-container {
     width: 100%;
+
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
@@ -314,10 +326,12 @@ ul {
       border: 8px solid #fff;
       width: 100%;
       margin-bottom: 1em;
+
       @media (min-width: 768px) {
         max-width: 50%;
       }
     }
+
     @media (min-width: 768px) {
       .text-container {
         display: flex;
@@ -460,6 +474,7 @@ ul {
     justify-content: space-around;
     margin: 1em 0;
     display: block;
+
     @media (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
@@ -468,6 +483,7 @@ ul {
     img {
       width: 100%;
       border: 8px solid #fff;
+
       @media (min-width: 768px) {
         width: 45%;
       }
@@ -478,6 +494,7 @@ ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     @media (min-width: 1280px) {
       justify-content: space-around;
     }
@@ -492,6 +509,7 @@ ul {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+
       @media (min-width: 1280px) {
         width: 400px;
       }
@@ -542,9 +560,11 @@ ul {
       .title {
         font-family: "Dosis", sans-serif;
         font-size: 24px;
+
         @media (min-width: 768px) {
           font-size: 32px;
         }
+
         font-weight: 200;
         font-style: italic;
         letter-spacing: 0;
@@ -638,13 +658,14 @@ ul {
 }
 
 .modal-container {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: 1000;
+
   &.closed {
     display: none;
   }
@@ -659,12 +680,14 @@ ul {
     transform: translate(-50%, -50%);
     line-height: 1.5em;
     border: 4px solid #957dad;
-    box-shadow: 0 10px 10px rgb(0,0,0,0.2);
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.2);
     font-size: 14px;
-    @media (min-width: 1280px){
+
+    @media (min-width: 1280px) {
       font-size: 16px;
       width: 640px;
     }
+
     .close-modal-btn {
       position: absolute;
       top: 10px;

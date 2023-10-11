@@ -212,7 +212,7 @@ ul li {
   font-weight: 900;
   margin: 0;
   font-style: italic;
-  font-style: 14px;
+  font-size: 14px;
 }
 #fixedmenu ul a li.red {
   color: #963D5A;
